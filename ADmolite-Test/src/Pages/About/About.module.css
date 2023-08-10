@@ -1,0 +1,40 @@
+.container{
+    width: 99vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(src/Assets/27059.jpg);
+    background-size: cover;
+}
+
+.about{
+    width: 90vw;
+    height: 500px;
+    background-color: var(--darkBg);
+    backdrop-filter: var(--blur);
+    border-radius: 8px;
+    box-shadow: var(--boxShadow);
+    padding: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    overflow: auto;
+}
+
+p{
+    margin: 5px;
+}
+
+@media screen and (max-width: 768px){
+    p{
+        font-size: 10px;
+    }
+
+    .about{
+        height: 400px;
+    }
+}

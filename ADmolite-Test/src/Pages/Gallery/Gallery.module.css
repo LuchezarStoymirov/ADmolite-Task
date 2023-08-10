@@ -1,0 +1,109 @@
+.container{
+    width: 99vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(src/Assets/27059.jpg);
+    background-size: cover;
+}
+
+.gallery{
+    width: 90vw;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--darkBg);
+    backdrop-filter: blur(5px);
+    box-shadow: var(--boxShadow);
+    border-radius: 8px;
+}
+
+.row{
+    width: 100%;
+    height: 33%;
+    margin: 0;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.itemOne,
+.itemTwo,
+.itemThree,
+.itemFour,
+.itemFive,
+.itemSix{
+    transition: transform 0.3s ease-in-out;
+}
+
+.itemOne:hover,
+.itemTwo:hover,
+.itemThree:hover,
+.itemFour:hover,
+.itemFive:hover,
+.itemSix:hover{
+    transform: scale(1.05);
+}
+
+.itemOne{
+    width: 60%;
+    height: 100%;
+    background-image: url(src/Assets/38580.jpeg);
+    background-size: cover;
+    border-top-left-radius: 8px;
+    border-right: 1px solid white;
+}
+
+.itemTwo{
+    width: 40%;
+    height: 100%;
+    background-image: url(src/Assets/First.jpeg);
+    background-size: cover;
+    border-top-right-radius: 8px;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.itemThree{
+    width: 40%;
+    height: 100%;
+    background-image: url(src/Assets/mountains-5120x2880-macos-4k-5k-sierra-sky-android-wallpaper-11473.jpeg);
+    background-size: cover;
+    border-top: 1px solid white;
+}
+
+.itemFour{
+    width: 60%;
+    height: 100%;
+    background-image: url(src/Assets/pexels-pixabay-358532.jpeg);
+    background-size: cover;
+    border-left: 1px solid white;
+}
+
+.itemFive{
+    width: 60%;
+    height: 100%;
+    background-image: url(src/Assets/4k-mountain-0hb4gnwalnj51zsh.jpeg);
+    background-size: cover;
+    border-bottom-left-radius: 8px;
+    border-top: 1px solid white;
+}
+
+.itemSix{
+    width: 40%;
+    height: 100%;
+    background-image: url(src/Assets/pexels-francesco-ungaro-1525041.jpeg);
+    background-size: cover;
+    border-bottom-right-radius: 8px;
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+}
+
+@media screen and (max-width: 768px){
+    .gallery{
+        height: 400px;
+    }
+}

@@ -1,0 +1,39 @@
+.container {
+    width: 99vw;
+    height: 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: var(--boxShadow);
+  }
+  
+  .Link {
+    margin: 0;
+    margin-left: 20px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+    color: black;
+  }
+
+  .PLink {
+    margin: 0;
+    margin-left: 20px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .Link:hover {
+    transform: scale(1.1); 
+    color: lightskyblue; 
+    cursor: pointer;
+  }
+
+  
+  @media screen and (max-width: 768px){
+    .PLink{
+        font-size: 15px;
+    }
+  }

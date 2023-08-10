@@ -1,0 +1,18 @@
+.container{
+    width: 99vw;
+    height: 70px;
+    margin: 0;
+    padding: 0;
+    background-color: var(--blue);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo{
+    width: 250px;
+    height: 80px;
+    margin-bottom: 20px;
+    background-image: url(src/Assets/Mountaineers-logo.png);
+    background-size: cover;
+}
